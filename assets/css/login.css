@@ -1,0 +1,157 @@
+@import url('../css/global.css');
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Card central ------------------------------------------ */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 70%;
+  margin: auto;
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-card);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 80px;
+  padding: 10px;
+  background-color: var(--cor-overlay);
+}
+
+/* --- Botão voltar ------------------------------------------ */
+.btn-voltar {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  margin: auto 40px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  transition: transform var(--transicao-rapida);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-voltar:hover {
+  transform: scale(1.1);
+}
+
+/* --- Logo --------------------------------------------------- */
+.logo {
+  margin: auto 40px auto auto;
+}
+
+/* --- Formulário -------------------------------------------- */
+form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  padding: 0px 0px 4px 10px;
+  color: var(--cor-texto-suave);
+}
+
+.campo input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: var(--raio-botao);
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.campo input:hover, .campo input:focus {
+  box-shadow: 1px 2px black;
+}
+
+.input-senha {
+  position: relative;
+}
+
+.input-senha input {
+  width: 100%;
+  padding-right: 40px; /* espaço para o ícone */
+}
+
+/* --- Botão mostrar/ocultar senha --------------------------- */
+.toggle-senha {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-texto-suave);
+  transition: color var(--transicao-rapida);
+}
+
+.toggle-senha:hover {
+  color: var(--cor-texto);
+}
+
+.toggle-senha svg {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+/* --- Botão de envio ---------------------------------------- */
+.btn-entrar {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: var(--raio-botao);
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transicao-rapida);
+}
+
+.btn-entrar:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+/* --- Aviso de erro ----------------------------------------- */
+.erro {
+  color: var(--cor-erro);
+  font-size: 0.9rem;
+  margin: 4px 0px 0px 10px;
+  display: none;
+}
+
+/* --- Rodapé do card ---------------------------------------- */
+.card-footer {
+  padding: 30px 40px;
+  background-color: var(--cor-sombra);
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--cor-texto-suave);
+}

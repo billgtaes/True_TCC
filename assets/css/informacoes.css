@@ -1,0 +1,104 @@
+@import url('global.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: var(--cor-card);
+    padding: 40px;
+    border-radius: var(--raio-card);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-texto-suave);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-input);
+    font-size: 16px;
+    font-family: var(--fonte-base);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.photo-section {
+    border: 2px dashed var(--cor-primaria);
+    padding: 20px;
+    border-radius: var(--raio-input);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#photoPreview {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 15px;
+    border-radius: var(--raio-input);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: var(--raio-botao);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background var(--transicao-rapida);
+}
+
+.btn-submit {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.btn-submit:hover {
+    background: var(--cor-primaria-hover);
+}
+
+.btn-cancel {
+    background: var(--cor-borda);
+    color: var(--cor-texto);
+}
+
+.btn-cancel:hover {
+    background: rgba(209, 213, 219, 0.9);
+}

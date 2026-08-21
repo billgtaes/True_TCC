@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição</title>
+    <link rel="stylesheet" href="../assets/css/informacoes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descrição</h1>
+        
+        <form id="descricaoForm">
+            <div class="form-group">
+                <label for="descricao">Digite sua descrição:</label>
+                <textarea 
+                    id="descricao" 
+                    name="descricao" 
+                    placeholder="Escreva aqui..."
+                    minlength="10"
+                ></textarea>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Continuar</button>
+                <button type="button" class="btn-cancel" onclick="irParaDashboard()">Pular</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('descricaoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            irParaDashboard();
+        });
+
+        function irParaDashboard() {
+            window.location.href = './dashboard.html';
+        }
+    </script>
+</body>
+</html>

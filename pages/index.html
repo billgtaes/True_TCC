@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial | OficinaAprender+</title>
+    <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
+</head>
+<body>
+
+    <div class="nav-bar" role="navigation">
+        <div class="logo">
+            <img src="../assets/icons/user-icon.png" class="logo-img" alt="Logo">
+        </div>
+        <div class="nav-btns">
+            <button class="btn-cadastrar" id="btn-cadastrar">
+                <div class="btn-text">Cadastrar</div>
+            </button>
+            <button class="btn-entrar" id="btn-entrar">
+                <div class="btn-text">Entrar</div>
+            </button>
+        </div>
+    </div>
+
+    <div role="main" class="main">
+ 
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-text reveal">
+                <h1>Seu sistema de <span class="hero-highlight">acompanhamento psicopedagogo!</span></h1>
+                <p>Centralize sessões, evoluções e devolutivas da equipe multidisciplinar em um só lugar — com a família sempre por perto.</p>
+                <button class="btn-cta" id="btn-cta-hero">Criar conta gratuita</button>
+            </div>
+            <div class="hero-art reveal" aria-hidden="true">
+                <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="blobGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--cor-primaria)"/>
+                            <stop offset="100%" stop-color="var(--cor-azul-claro)"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#blobGrad1)" opacity="0.95">
+                        <animate attributeName="d" dur="14s" repeatCount="indefinite"
+                            values="
+                            M353,313Q330,386,255,401Q180,416,124,361Q68,306,80,229Q92,152,160,108Q228,64,300,103Q372,142,373,221Q374,300,353,313Z;
+                            M352,300Q345,360,278,392Q211,424,143,392Q75,360,67,283Q59,206,113,150Q167,94,244,98Q321,102,348,160Q375,218,352,300Z;
+                            M353,313Q330,386,255,401Q180,416,124,361Q68,306,80,229Q92,152,160,108Q228,64,300,103Q372,142,373,221Q374,300,353,313Z
+                            "/>
+                    </path>
+                    <circle cx="395" cy="120" r="34" fill="var(--cor-card)" opacity="0.9"/>
+                    <circle cx="98" cy="380" r="20" fill="var(--cor-branco)" opacity="0.7"/>
+                    <g transform="translate(150,150)" opacity="0.97">
+                        <rect x="10" y="10" width="200" height="170" rx="40" fill="var(--cor-branco)"/>
+                        <path d="M35 130 Q60 70 95 105 Q125 135 160 60" fill="none"
+                              stroke="var(--cor-primaria)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="35" cy="130" r="9" fill="var(--cor-primaria)"/>
+                        <circle cx="95" cy="105" r="9" fill="var(--cor-branco)" stroke="var(--cor-primaria)" stroke-width="6"/>
+                        <circle cx="160" cy="60" r="11" fill="var(--cor-primaria)"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+ 
+        <!-- Como funciona -->
+        <section class="how-section">
+            <h2 class="reveal">Como funciona</h2>
+            <div class="how-grid">
+                <article class="how-card reveal">
+                    <svg class="how-art" viewBox="0 0 160 140" aria-hidden="true">
+                        <rect x="48" y="42" width="56" height="62" rx="10" fill="var(--cor-branco)"/>
+                        <line x1="58" y1="58" x2="94" y2="58" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="58" y1="72" x2="94" y2="72" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="58" y1="86" x2="78" y2="86" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Registre cada sessão</h3>
+                    <p>Evoluções, observações e anexos em um histórico único por aprendente.</p>
+                </article>
+                <article class="how-card reveal">
+                    <svg class="how-art" viewBox="0 0 160 140" aria-hidden="true">
+                        <circle cx="62" cy="55" r="16" fill="var(--cor-primaria)"/>
+                        <circle cx="98" cy="55" r="16" fill="var(--cor-branco)" stroke="var(--cor-primaria)" stroke-width="3"/>
+                        <path d="M40 100 Q40 78 62 78 Q72 78 78 86 Q84 78 94 78 Q120 78 120 100"
+                              fill="none" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Conecte a equipe</h3>
+                    <p>Psicopedagogos, fonoaudiólogos e terapeutas trocando devolutivas no mesmo fluxo.</p>
+                </article>
+                <article class="how-card reveal">
+                    <svg class="how-art" viewBox="0 0 160 140" aria-hidden="true">
+                        <path d="M50 90 L50 65 L65 65 L65 90" fill="none" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M70 90 L70 50 L85 50 L85 90" fill="none" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M90 90 L90 38 L105 38 L105 90" fill="none" stroke="var(--cor-primaria)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Acompanhe a evolução</h3>
+                    <p>Metas e progresso visíveis para a equipe e compartilháveis com a família.</p>
+                </article>
+            </div>
+        </section>
+ 
+        <!-- Para quem é -->
+        <section class="who-section">
+            <div class="who-card who-prof reveal">
+                <svg class="who-art" viewBox="0 0 200 160" aria-hidden="true">
+                    <circle cx="100" cy="62" r="26" fill="var(--cor-primaria)"/>
+                    <path d="M55 130 Q55 90 100 90 Q145 90 145 130" fill="var(--cor-primaria)"/>
+                    <rect x="80" y="100" width="40" height="30" rx="6" fill="var(--cor-branco)"/>
+                    <line x1="88" y1="110" x2="112" y2="110" stroke="var(--cor-primaria)" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="88" y1="118" x2="106" y2="118" stroke="var(--cor-primaria)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <h3>Para profissionais</h3>
+                <p>Organize sua agenda, seus registros e a comunicação com o resto da equipe em um painel só.</p>
+            </div>
+            <div class="who-card who-fam reveal">
+                <svg class="who-art" viewBox="0 0 200 160" aria-hidden="true">
+                    <circle cx="78" cy="58" r="20" fill="var(--cor-primaria)"/>
+                    <circle cx="124" cy="64" r="15" fill="var(--cor-card)" stroke="var(--cor-primaria)" stroke-width="3"/>
+                    <path d="M45 128 Q45 92 80 92 Q100 92 108 105 Q116 92 134 92 Q160 92 160 122"
+                          fill="none" stroke="var(--cor-primaria)" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <h3>Para famílias</h3>
+                <p>Acesse devolutivas e orientações claras sobre o desenvolvimento do seu aprendente, sem intermediários.</p>
+            </div>
+        </section>
+ 
+        <!-- CTA final -->
+        <section class="cta-section reveal">
+            <h2>Comece a organizar o acompanhamento hoje</h2>
+            <p>O cadastro leva menos de dois minutos.</p>
+            <button class="btn-cta" id="btn-cta-final">Criar minha conta</button>
+        </section>
+ 
+    </div>
+ 
+    <footer>
+        <div class="footer-content">
+            <p><strong>Oficina Aprender+</strong> — Trabalho de Conclusão de Curso</p>
+            <p>Centro Estadual de Educação Tecnológica Paula Souza — Etec Sebrae</p>
+            <p>Técnico em Desenvolvimento de Sistemas · São Paulo, 2026</p>
+        </div>
+    </footer>
+ 
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>

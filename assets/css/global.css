@@ -1,0 +1,64 @@
+:root {
+  /* Cores principais */
+  --cor-fundo:          #eef3fb;
+  --cor-card:           #d6eaf8;
+  --cor-primaria:       #3c5ae1;
+  --cor-primaria-hover: #2f48c4;
+  --cor-texto:          #1a1a2e;
+  --cor-texto-suave:    #6b7280;
+  --cor-borda:          #d1d5db;
+  --cor-branco:         #ffffff;
+  --cor-sombra:         rgba(0, 0, 0, 0.1);
+  --cor-overlay:        rgba(255, 255, 255, 0.2);
+  --cor-footer:         #374151;
+  --cor-fundo-navbar:   #e2e8f1;
+  --cor-erro:           #c0392b;
+
+  /* Arredondamentos */
+  --raio-card:    45px;
+  --raio-input:   8px;
+  --raio-botao:   15px;
+  --raio-logo:    20px;
+
+  /* Tipografia */
+  --fonte-base: sans-serif;
+  --tamanho-base: 1rem;
+
+  /* Transições */
+  --transicao-rapida: 0.2s ease;
+  --transicao-media:  0.5s ease;
+}
+
+/* --- Reset -------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-base);
+  letter-spacing: 0.006rem;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* --- Logo --------------------------------------------------- */
+.logo-img {
+  max-width: 50px;
+  padding: 8px;
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-logo);
+  box-shadow: 0 0 6px -2px var(--cor-sombra);
+}

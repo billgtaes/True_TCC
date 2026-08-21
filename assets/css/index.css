@@ -1,0 +1,321 @@
+@import url('../css/global.css');
+
+/* --- Tokens locais da landing page -------------------------- */
+:root {
+  --cor-azul-claro:   #8fa8f0;
+  --cor-azul-fundo-2: #f7faff;
+  --fonte-display:  serif;
+  --fonte-corpo:   'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--fonte-corpo);
+}
+ 
+/* --- Barra de navegação ------------------------------------ */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--cor-fundo-navbar);
+  border-bottom: 1px solid var(--cor-borda);
+  z-index: 100;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.nav-btns {
+  margin-left: auto;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+  gap: 5px;
+}
+
+.nav-btns button {
+  padding: 5px;
+  border-radius: var(--raio-botao);
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  transition: letter-spacing var(--transicao-media),
+              box-shadow var(--transicao-media),
+              width var(--transicao-media);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 4px -1px var(--cor-sombra);
+}
+
+.nav-btns button:hover {
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  box-shadow: 1px 1px 5px -1px var(--cor-sombra);
+  width: 95px;
+}
+
+.btn-entrar {
+  border: none;
+  background-color: var(--cor-branco);
+}
+
+.btn-cadastrar {
+  border: none;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+/* --- Conteúdo principal ------------------------------------ */
+.main {
+  display: block;
+  margin-top: 80px;
+}
+ 
+/* --- Reveal (fade sutil ao rolar) --------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+ 
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+ 
+/* --- Hero ----------------------------------------------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+}
+ 
+.hero-text {
+  flex: 1 1 460px;
+  max-width: 540px;
+}
+ 
+.hero-text h1 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--cor-texto);
+  margin-bottom: 20px;
+}
+ 
+.hero-highlight {
+  color: var(--cor-primaria);
+  font-style: italic;
+}
+ 
+.hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--cor-texto-suave);
+  margin-bottom: 32px;
+  max-width: 440px;
+}
+ 
+.hero-art {
+  flex: 1 1 420px;
+  max-width: 480px;
+}
+ 
+.hero-art svg {
+  width: 100%;
+  height: auto;
+}
+ 
+.btn-cta {
+  border: none;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  font-family: var(--fonte-corpo);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 30px;
+  border-radius: var(--raio-botao);
+  cursor: pointer;
+  box-shadow: 0 6px 16px -6px var(--cor-sombra);
+  transition: background-color var(--transicao-rapida),
+              transform var(--transicao-rapida);
+}
+ 
+.btn-cta:hover {
+  background-color: var(--cor-primaria-hover);
+  transform: translateY(-2px);
+}
+ 
+/* --- Como funciona ------------------------------------------- */
+.how-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 40px 70px;
+}
+ 
+.how-section h2 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  text-align: center;
+  margin-bottom: 44px;
+  color: var(--cor-texto);
+}
+ 
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+ 
+.how-card {
+  background-color: var(--cor-azul-fundo-2);
+  border-radius: var(--raio-card);
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform var(--transicao-media);
+}
+ 
+.how-card:hover {
+  transform: translateY(-6px);
+}
+ 
+.how-art {
+  width: 110px;
+  height: 96px;
+  margin: 0 auto 18px;
+}
+ 
+.how-card h3 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: var(--cor-texto);
+}
+
+.how-card svg, .who-card svg {
+  background-color: var(--cor-card); 
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+ 
+.how-card p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--cor-texto-suave);
+}
+ 
+/* --- Para quem é ----------------------------------------------- */
+.who-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 40px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+ 
+.who-card {
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-card);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+ 
+.who-art {
+  width: 96px;
+  height: 80px;
+  flex-shrink: 0;
+}
+ 
+.who-card h3 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--cor-texto);
+}
+ 
+.who-card p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--cor-texto-suave);
+}
+ 
+/* --- CTA final --------------------------------------------------- */
+.cta-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 40px 100px;
+  text-align: center;
+}
+ 
+.cta-section h2 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+ 
+.cta-section p {
+  color: var(--cor-texto-suave);
+  margin-bottom: 26px;
+}
+ 
+/* --- Rodapé ------------------------------------------------ */
+footer {
+  margin-top: auto;
+  background-color: var(--cor-footer);
+  color: var(--cor-branco);
+  padding: 30px 20px;
+}
+ 
+.footer-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.footer-content p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+ 
+.footer-content p strong {
+  opacity: 1;
+}

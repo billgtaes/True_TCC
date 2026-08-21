@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar | OficinaAprender+</title>
+  <link rel="stylesheet" href="../assets/css/cadastro.css" type="text/css">
+</head>
+<body>
+
+  <div class="card" role="main">
+    <div class="card-header">
+      <button type="button" id="btn-voltar" class="btn-voltar" aria-label="Voltar">
+        &leftarrow;
+      </button>
+      <div class="logo">
+        <img src="../assets/icons/user-icon.png" class="logo-img" alt="Logo">
+      </div>
+    </div>
+
+    <form id="form-cadastro" novalidate>
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" name="nome" id="nome">
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+     
+
+      <div class="campo">
+        <label for="cpf">CPF:</label>
+        <div class="input-senha">
+          <input type="cpf" name="cpf" id="cpf">
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="celular">Celular:</label>
+        <div class="input-senha">
+          <input type="celular" name="celular" id="celular">
+        </div>
+      </div>
+
+       <div class="campo">
+        <label for="senha">Criar senha:</label>
+        <div class="input-senha">
+          <input type="password" name="senha" id="senha">
+          <button type="button" class="toggle-senha" id="toggle-senha"></button>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="confirm-senha">Confirmar senha:</label>
+        <div class="input-senha">
+          <input type="password" name="confirm-senha" id="confirm-senha">
+          <button type="button" class="toggle-senha" id="toggle-confirm-senha"></button>
+        </div>
+      </div>
+
+      <div class="forca-senha">
+          <div class="barra">
+            <div class="progresso"></div>
+          </div>
+
+          <span class="texto-forca">Digite uma senha</span>
+      </div>
+
+      <div class="erro">Erro</div>
+      <button type="submit" class="btn-cadastrar" id="btn-cadastrar">Criar conta</button>
+    </form>
+
+    <div class="card-footer">
+      Já possui conta? Entre <a href="login.html">aqui</a>!
+    </div>
+  </div>
+
+  <script src="../assets/js/utils.js"></script>
+  <script src="../assets/js/cadastro.js"></script>
+</body>
+</html>

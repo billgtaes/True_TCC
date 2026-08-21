@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | OficinaAprender+</title>
+  <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+
+  <div class="card" role="main">
+    <div class="card-header">
+      <button type="button" id="btn-voltar" class="btn-voltar" aria-label="Voltar">
+        &leftarrow;
+      </button>
+      <div class="logo">
+        <img src="../assets/icons/user-icon.png" class="logo-img" alt="Logo">
+      </div>
+    </div>
+
+    <form id="form-login" novalidate>
+      <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      
+      <div class="campo">
+        <label for="senha">Senha:</label>
+        <div class="input-senha">
+          <input type="password" name="senha" id="senha">
+          <button type="button" class="toggle-senha" id="toggle-senha"></button>
+        </div>
+      </div>
+
+      <div class="erro">Erro</div>
+      <button type="submit" class="btn-entrar" id="btn-entrar">Entrar</button>
+    </form>
+    
+    <div class="card-footer">
+      Não possui conta? Cadastre-se <a href="cadastro.html">aqui</a>!
+    </div>
+  </div>
+
+  <script src="../assets/js/utils.js"></script>
+  <script src="../assets/js/login.js"></script>
+</body>
+</html>
